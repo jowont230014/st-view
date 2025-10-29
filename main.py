@@ -47,7 +47,7 @@ def page3():
 page_names_to_funcs = {'Main Page':main_page, 'Page2':page2, 'Page3':page3}
 
 # 사이드 바에서 selectbox 선언 & 선택 결과 저장
-selected_page = st.sidebar.selectbox('Select  Page.', page_names_to_funcs.keys())
+selected_page = st.sidebar.selectbox('Select a Page.', page_names_to_funcs.keys())
 
 # 해당 페이지 부르기
 page_names_to_funcs[selected_page]()
